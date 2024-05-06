@@ -49,13 +49,14 @@ class ProjectView extends GetView<ProjectController> {
                 return ProyekCard(proyek);
               }).toList()),
               NavigationButton(
-                // currentPage:
-                //     controller.projectData.value.data!.pagination!.currentPage!,
+                currentPage:
+                    controller.projectData.value.data!.pagination!.currentPage!,
                 lastPage:
                     controller.projectData.value.data!.pagination!.lastPage!,
                 implementLogic: (page) {
                   controller.fetchProjectData(page: page);
                 },
+                tag: 'project',
               ),
             ],
           );

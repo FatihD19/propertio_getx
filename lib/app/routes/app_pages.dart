@@ -2,12 +2,16 @@ import 'package:get/get.dart';
 
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
+import '../modules/detail_project/bindings/detail_project_binding.dart';
+import '../modules/detail_project/views/detail_project_view.dart';
 import '../modules/favorite/bindings/favorite_binding.dart';
 import '../modules/favorite/views/favorite_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/profile/bindings/profile_binding.dart';
+import '../modules/profile/views/profile_view.dart';
 import '../modules/project/bindings/project_binding.dart';
 import '../modules/project/views/project_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
@@ -49,6 +53,16 @@ class AppPages {
       name: _Paths.FAVORITE,
       page: () => const FavoriteView(),
       binding: FavoriteBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_PROJECT,
+      page: () => const DetailProjectView(),
+      bindings: [DetailProjectBinding(), ProjectBinding()],
     ),
   ];
 }

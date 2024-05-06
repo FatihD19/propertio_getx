@@ -68,7 +68,7 @@ class AuthLocalDataSource {
     return idAccount;
   }
 
-  Future<void> clearLocalStorage() async {
+  static Future<void> clearLocalStorage() async {
     const storage = FlutterSecureStorage();
     await storage.deleteAll();
   }

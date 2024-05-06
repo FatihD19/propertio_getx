@@ -6,8 +6,11 @@ import '../controllers/project_controller.dart';
 class ProjectBinding extends Bindings {
   @override
   void dependencies() {
+    Get.lazyPut<ProjectRemoteDataSource>(
+      () => ProjectRemoteDataSource(),
+    );
     Get.lazyPut<ProjectController>(
-      () => ProjectController(ProjectRemoteDataSource()),
+      () => ProjectController(Get.find<ProjectRemoteDataSource>()),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/data/datasource/project_remote_datasource.dart';
+
 import 'package:propertio_getx/app/data/model/responses/list_project_response_model.dart';
 
 class ProjectController extends GetxController {
@@ -38,6 +39,5 @@ class ProjectController extends GetxController {
       },
     );
     // projectData.refresh();
-    update();
   }
 }

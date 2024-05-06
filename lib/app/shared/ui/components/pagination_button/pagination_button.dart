@@ -5,21 +5,28 @@ import 'package:propertio_getx/app/constants/theme.dart';
 import 'package:propertio_getx/app/shared/ui/components/pagination_button/pagination_controller.dart';
 
 class NavigationButton extends StatelessWidget {
+  String? tag;
+  int? currentPage;
+  int? lastPage;
   final Function(int) implementLogic; // Fungsi custom logic
 
-  NavigationButton({required int lastPage, required this.implementLogic}) {
-    Get.put(
-      PaginationController(
-        lastPage: lastPage,
-        implementLogic: implementLogic,
-      ),
-    ); // Inject controller dengan implementLogic
-  }
+  NavigationButton(
+      {required this.currentPage,
+      required this.lastPage,
+      required this.implementLogic,
+      this.tag});
 
   @override
   Widget build(BuildContext context) {
     return Obx(() {
-      final controller = Get.find<PaginationController>();
+      final controller = Get.put(
+        PaginationController(
+          currentPage: RxInt(currentPage!),
+          lastPage: RxInt(lastPage!),
+          implementLogic: implementLogic,
+        ),
+        tag: tag,
+      ); // Inject controller dengan implementLogic;
 
       return Container(
         padding: const EdgeInsets.symmetric(vertical: 16),
@@ -38,12 +45,12 @@ class NavigationButton extends StatelessWidget {
               const SizedBox(width: 10),
               Row(
                 children: List.generate(
-                  controller.lastPage,
+                  lastPage!,
                   (index) => ElevatedButton(
                     onPressed: () => controller.setPage(index + 1),
                     child: Text(
                       '${index + 1}',
-                      style: controller.currentPage.value == index + 1
+                      style: currentPage == index + 1
                           ? TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
@@ -56,9 +63,8 @@ class NavigationButton extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
                       minimumSize: const Size(50, 50),
-                      backgroundColor: controller.currentPage.value == index + 1
-                          ? primaryColor
-                          : null,
+                      backgroundColor:
+                          currentPage == index + 1 ? primaryColor : null,
                     ),
                   ),
                 ),

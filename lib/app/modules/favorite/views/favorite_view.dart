@@ -2,17 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/theme.dart';
+import 'package:propertio_getx/app/data/model/pagination_model.dart';
 import 'package:propertio_getx/app/shared/ui/components/dialog_view.dart';
 import 'package:propertio_getx/app/shared/ui/components/pagination_button/pagination_button.dart';
+import 'package:propertio_getx/app/shared/ui/components/pagination_button/pagination_controller.dart';
 import 'package:propertio_getx/app/shared/ui/components/text_failure.dart';
 import 'package:propertio_getx/app/shared/ui/widgets/proyek_card.dart';
 
 import '../controllers/favorite_controller.dart';
 
-class FavoriteView extends GetView<FavoriteController> {
+class FavoriteView extends StatelessWidget {
   const FavoriteView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<FavoriteController>();
     Widget header() {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,14 +46,19 @@ class FavoriteView extends GetView<FavoriteController> {
                   });
                 });
               }).toList()),
+              Text(
+                  '${controller.favoriteData.value!.data!.pagination!.currentPage!}'),
+              Text(
+                  '${controller.favoriteData.value!.data!.pagination!.lastPage!}'),
               NavigationButton(
-                // currentPage:
-                //     controller.projectData.value.data!.pagination!.currentPage!,
+                currentPage: controller
+                    .favoriteData.value!.data!.pagination!.currentPage!,
                 lastPage:
                     controller.favoriteData.value!.data!.pagination!.lastPage!,
                 implementLogic: (page) {
                   controller.fetchFavoriteData(page: page);
                 },
+                tag: 'favorite',
               ),
             ],
           );
@@ -63,7 +71,7 @@ class FavoriteView extends GetView<FavoriteController> {
       color: bgColor1,
       child: RefreshIndicator.adaptive(
         onRefresh: () {
-          return controller.fetchFavoriteData();
+          return controller.fetchFavoriteData(page: 1);
         },
         child: ListView(
           children: [

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/theme.dart';
+import 'package:propertio_getx/app/modules/dashboard/views/dashboard_view.dart';
 import 'package:propertio_getx/app/shared/ui/components/button.dart';
 import 'package:propertio_getx/app/shared/ui/components/textfieldForm.dart';
 
@@ -125,7 +126,7 @@ class LoginView extends GetView<LoginController> {
                   style: primaryTextStyle.copyWith(fontSize: 12)),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/register');
+                  Get.to(() => VerisonPage());
                 },
                 child: Text('Klik disini',
                     style: thirdTextStyle.copyWith(fontSize: 12)),

@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/api_path.dart';
 import 'package:propertio_getx/app/data/model/proyek_model.dart';
+import 'package:propertio_getx/app/routes/app_pages.dart';
 
 import 'package:propertio_getx/app/shared/ui/components/button.dart';
 import 'package:propertio_getx/app/shared/ui/components/container_style.dart';
@@ -27,11 +29,7 @@ class ProyekCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(
-        //         builder: (context) =>
-        //             DetailProyekPage(proyek.slug.toString())));
+        Get.toNamed(Routes.DETAIL_PROJECT, arguments: proyek.slug);
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 16),

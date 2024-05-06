@@ -10,7 +10,14 @@ class FavoriteButtonController extends GetxController {
   FavoriteButtonController({required this.isFavorite});
   final FavoriteController favoriteController = Get.find<FavoriteController>();
 
-  void toggleFavorite(String projectCode) {
+  void toggleFavorite(String projectCode) async {
+    if (await AuthLocalDataSource.statusLogin() == false) {
+      errorDialog(Get.overlayContext!, 'Anda harus login terlebih dahulu',
+          'Untuk menambahkan ke favorit', onConfirm: () {
+        Get.toNamed('/login');
+      });
+      return;
+    }
     if (isFavorite.value) {
       // Jika favorit, hapus dari favorit
 
