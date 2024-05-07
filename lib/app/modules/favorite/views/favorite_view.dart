@@ -46,10 +46,10 @@ class FavoriteView extends StatelessWidget {
                   });
                 });
               }).toList()),
-              Text(
-                  '${controller.favoriteData.value!.data!.pagination!.currentPage!}'),
-              Text(
-                  '${controller.favoriteData.value!.data!.pagination!.lastPage!}'),
+              // Text(
+              //     '${controller.favoriteData.value!.data!.pagination!.currentPage!}'),
+              // Text(
+              //     '${controller.favoriteData.value!.data!.pagination!.lastPage!}'),
               NavigationButton(
                 currentPage: controller
                     .favoriteData.value!.data!.pagination!.currentPage!,

@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/api_path.dart';
 
 import 'package:propertio_getx/app/constants/theme.dart';
@@ -7,105 +8,87 @@ import 'package:propertio_getx/app/constants/theme.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class InfoPromoCarousel extends StatefulWidget {
-  final List img;
+class InfoPromoCarousel extends StatelessWidget {
+  final List<String> img; // Parameter list image
+
   bool? isVirtual;
   String? virtualUrl;
   InfoPromoCarousel(this.img,
       {this.isVirtual = false, this.virtualUrl, super.key});
 
   @override
-  State<InfoPromoCarousel> createState() => _InfoPromoCarouselState();
-}
-
-class _InfoPromoCarouselState extends State<InfoPromoCarousel> {
-  int currentIndex = 0;
-
-  @override
   Widget build(BuildContext context) {
+    final controller =
+        Get.put(InfoPromoCarouselController()); // Inject controller
+
     Widget indicator(int index) {
-      return Container(
-        width: 10,
-        height: 10,
-        margin: EdgeInsets.symmetric(
-          horizontal: 2,
-        ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: currentIndex == index ? primaryColor : Color(0xffC4C4C4),
-        ),
-      );
+      return Obx(() {
+        return Container(
+          width: 10,
+          height: 10,
+          margin: const EdgeInsets.symmetric(horizontal: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: controller.currentIndex.value == index
+                ? primaryColor
+                : Color(0xffC4C4C4),
+          ),
+        );
+      });
     }
 
-    int index = -1;
-    return Container(
-        // color: bgColor2,
-        child: Stack(
+    return Stack(
       children: [
         Column(
           children: [
             CarouselSlider(
-              items: widget.img.map((e) {
-                return Container(
-                    // decoration: BoxDecoration(
-                    //   // borderRadius: BorderRadius.circular(10),
-                    //   image: DecorationImage(
-                    //     fit: BoxFit.cover,
-                    //     image: NetworkImage(ApiPath.image(e)),
-                    //   ),
-                    // ),
-                    child: Image.network(
+              items: img.map((e) {
+                return Image.network(
                   ApiPath.image(e),
                   fit: BoxFit.cover,
                   width: double.infinity,
                   errorBuilder: (context, error, stackTrace) {
-                    return Icon(Icons.error, color: Colors.red);
+                    return const Icon(Icons.error, color: Colors.red);
                   },
                   loadingBuilder: (context, child, progress) {
                     return progress == null
                         ? child
-                        : Shimmer.fromColors(
-                            baseColor: Colors.grey[300]!,
-                            highlightColor: Colors.grey[100]!,
-                            child: Container(
-                              height: 280,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xffF3F3F3),
-                              ),
+                        : Container(
+                            height: 280,
+                            color: Colors.grey[300],
+                            child: Center(
+                              child: CircularProgressIndicator(),
                             ),
                           );
                   },
-                ));
+                );
               }).toList(),
               options: CarouselOptions(
                 viewportFraction: 1,
                 onPageChanged: (index, reason) {
-                  setState(() {
-                    currentIndex = index;
-                  });
+                  controller.updateCurrentIndex(index); // Update currentIndex
                 },
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: widget.img.map((e) {
-                index++;
-                return indicator(index);
-              }).toList(),
+              children: List.generate(
+                img.length,
+                (index) => indicator(index),
+              ),
             ),
             SizedBox(height: 10),
           ],
         ),
-        widget.isVirtual == false
+        isVirtual == false
             ? SizedBox()
             : Positioned(
                 bottom: 64,
                 left: MediaQuery.of(context).size.width / 2 - 76,
                 child: GestureDetector(
                   onTap: () {
-                    launchUrl(Uri.parse('${widget.virtualUrl}'));
+                    launchUrl(Uri.parse('${virtualUrl}'));
                     // Navigator.push(context,
                     //     MaterialPageRoute(builder: (context) {
                     //   return VirtualView();
@@ -139,6 +122,15 @@ class _InfoPromoCarouselState extends State<InfoPromoCarousel> {
                 ),
               )
       ],
-    ));
+    );
+  }
+}
+
+class InfoPromoCarouselController extends GetxController {
+  var currentIndex =
+      0.obs; // Gunakan RxInt untuk perubahan state yang dapat diamati
+
+  void updateCurrentIndex(int index) {
+    currentIndex.value = index;
   }
 }

@@ -18,70 +18,72 @@ class NavigationButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(() {
-      final controller = Get.put(
-        PaginationController(
-          currentPage: RxInt(currentPage!),
-          lastPage: RxInt(lastPage!),
-          implementLogic: implementLogic,
-        ),
-        tag: tag,
-      ); // Inject controller dengan implementLogic;
-
-      return Container(
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.arrow_back),
-                onPressed: controller.isPreviousDisabled
-                    ? null
-                    : () =>
-                        controller.setPage(controller.currentPage.value - 1),
+    return lastPage! <= 1
+        ? Container()
+        : Obx(() {
+            final controller = Get.put(
+              PaginationController(
+                currentPage: RxInt(currentPage!),
+                lastPage: RxInt(lastPage!),
+                implementLogic: implementLogic,
               ),
-              const SizedBox(width: 10),
-              Row(
-                children: List.generate(
-                  lastPage!,
-                  (index) => ElevatedButton(
-                    onPressed: () => controller.setPage(index + 1),
-                    child: Text(
-                      '${index + 1}',
-                      style: currentPage == index + 1
-                          ? TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            )
-                          : TextStyle(
-                              fontWeight: FontWeight.normal,
-                              color: Colors.black,
-                            ),
+              tag: tag,
+            ); // Inject controller dengan implementLogic;
+
+            return Container(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.arrow_back),
+                      onPressed: controller.isPreviousDisabled
+                          ? null
+                          : () => controller
+                              .setPage(controller.currentPage.value - 1),
                     ),
-                    style: ElevatedButton.styleFrom(
-                      shape: const CircleBorder(),
-                      minimumSize: const Size(50, 50),
-                      backgroundColor:
-                          currentPage == index + 1 ? primaryColor : null,
+                    const SizedBox(width: 10),
+                    Row(
+                      children: List.generate(
+                        lastPage!,
+                        (index) => ElevatedButton(
+                          onPressed: () => controller.setPage(index + 1),
+                          child: Text(
+                            '${index + 1}',
+                            style: currentPage == index + 1
+                                ? TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  )
+                                : TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    color: Colors.black,
+                                  ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: const CircleBorder(),
+                            minimumSize: const Size(50, 50),
+                            backgroundColor:
+                                currentPage == index + 1 ? primaryColor : null,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 10),
+                    IconButton(
+                      icon: const Icon(Icons.arrow_forward),
+                      onPressed: controller.isNextDisabled
+                          ? null
+                          : () => controller
+                              .setPage(controller.currentPage.value + 1),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(width: 10),
-              IconButton(
-                icon: const Icon(Icons.arrow_forward),
-                onPressed: controller.isNextDisabled
-                    ? null
-                    : () =>
-                        controller.setPage(controller.currentPage.value + 1),
-              ),
-            ],
-          ),
-        ),
-      );
-    });
+            );
+          });
   }
 }
 // class NavigationButton extends StatefulWidget {

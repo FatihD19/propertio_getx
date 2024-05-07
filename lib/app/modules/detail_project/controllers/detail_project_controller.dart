@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/data/datasource/project_remote_datasource.dart';
 import 'package:propertio_getx/app/data/model/responses/detail_project_response_model.dart';
+import 'package:propertio_getx/app/data/model/unit_model.dart';
 import 'package:propertio_getx/app/modules/project/controllers/project_controller.dart';
 
 class DetailProjectController extends GetxController {
@@ -13,8 +14,6 @@ class DetailProjectController extends GetxController {
   final String slug = Get.arguments;
 
   DetailProjectController(this._projectRemoteDataSource);
-
-  final projectController = Get.find<ProjectController>();
 
   @override
   void onInit() {
