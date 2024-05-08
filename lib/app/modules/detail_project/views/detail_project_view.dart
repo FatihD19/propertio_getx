@@ -15,6 +15,7 @@ import 'package:propertio_getx/app/shared/ui/views/detail_overview_view.dart';
 import 'package:propertio_getx/app/shared/ui/views/headline_properti_view.dart';
 import 'package:propertio_getx/app/shared/ui/views/info_map_view.dart';
 import 'package:propertio_getx/app/shared/ui/views/info_promo_view.dart';
+import 'package:propertio_getx/app/shared/ui/views/listile_agen.dart';
 import 'package:propertio_getx/app/shared/ui/views/promo_Ar_app.dart';
 import 'package:propertio_getx/app/shared/ui/views/video_view.dart';
 import 'package:propertio_getx/app/shared/ui/widgets/small_proyek_card.dart';
@@ -187,16 +188,16 @@ class DetailProjectView extends GetView<DetailProjectController> {
                         ? SizedBox()
                         : WebviewtubeDemo(urlVideo),
                     SizedBox(height: 16),
-                    // ListileDeveloper(
-                    //     developer: proyek.developer,
-                    //     onTap: () {
-                    //       showCustomSnackbar(
-                    //           context,
-                    //           ModalInformasi(
-                    //               developer: proyek.developer!,
-                    //               projectCode: proyek.projectCode),
-                    //           type: 'info');
-                    //     })
+                    ListileDeveloper(
+                        developer: proyek.developer,
+                        onTap: () {
+                          // showCustomSnackbar(
+                          //     context,
+                          //     ModalInformasi(
+                          //         developer: proyek.developer!,
+                          //         projectCode: proyek.projectCode),
+                          //     type: 'info');
+                        })
                   ],
                 ),
               ),

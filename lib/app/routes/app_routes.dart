@@ -11,6 +11,7 @@ abstract class Routes {
   static const FAVORITE = _Paths.FAVORITE;
   static const PROFILE = _Paths.PROFILE;
   static const DETAIL_PROJECT = _Paths.DETAIL_PROJECT;
+  static const KPR = _Paths.KPR;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const FAVORITE = '/favorite';
   static const PROFILE = '/profile';
   static const DETAIL_PROJECT = '/detail-project';
+  static const KPR = '/kpr';
 }

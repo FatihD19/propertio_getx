@@ -8,6 +8,8 @@ import '../modules/favorite/bindings/favorite_binding.dart';
 import '../modules/favorite/views/favorite_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/kpr/bindings/kpr_binding.dart';
+import '../modules/kpr/views/kpr_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -33,7 +35,13 @@ class AppPages {
     GetPage(
       name: _Paths.DASHBOARD,
       page: () => DashboardView(),
-      bindings: [DashboardBinding(), HomeBinding(), FavoriteBinding()],
+      bindings: [
+        DashboardBinding(),
+        HomeBinding(),
+        FavoriteBinding(),
+        ProfileBinding(),
+        KprBinding(),
+      ],
     ),
     GetPage(
       name: _Paths.PROJECT,
@@ -63,6 +71,11 @@ class AppPages {
       name: _Paths.DETAIL_PROJECT,
       page: () => const DetailProjectView(),
       bindings: [DetailProjectBinding(), ProjectBinding()],
+    ),
+    GetPage(
+      name: _Paths.KPR,
+      page: () => KprView(),
+      binding: KprBinding(),
     ),
   ];
 }

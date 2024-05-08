@@ -7,6 +7,7 @@ import 'package:propertio_getx/app/constants/theme.dart';
 import 'package:propertio_getx/app/modules/favorite/views/favorite_view.dart';
 import 'package:propertio_getx/app/modules/home/views/home_view.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:propertio_getx/app/modules/kpr/views/kpr_view.dart';
 import 'package:propertio_getx/app/modules/profile/views/profile_view.dart';
 import '../controllers/dashboard_controller.dart';
 
@@ -54,20 +55,6 @@ class DashboardView extends StatelessWidget {
                   unselectedItemColor: secondaryColor,
                   selectedItemColor: primaryColor),
             ));
-  }
-}
-
-class KprView extends StatelessWidget {
-  const KprView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'KprView is working',
-        style: TextStyle(fontSize: 20),
-      ),
-    );
   }
 }
 
