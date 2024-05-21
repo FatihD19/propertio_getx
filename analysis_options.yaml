@@ -1,4 +1,17 @@
 include: package:flutter_lints/flutter.yaml
-linter:
-  rules:
-    
+
+analyzer:
+  exluced:
+    - "lib/app/data/**"
+  plugins:
+    - dart_code_linter
+
+dart_code_linter:
+  metrics:
+    cyclomatic-complexity: 1
+    halstead-volume: 1
+    maintainability-index: 1
+    maximum-nesting-level: 1
+    source-lines-of-code: 1
+  metrics-exclude:
+    - test/**

@@ -122,11 +122,12 @@ class KprView extends GetView<KprController> {
               Row(
                 children: [
                   Obx(() => Container(
-                        width: 75,
+                        width: 100,
                         child: CustomTextField(
                           isNumber: true,
                           controller: TextEditingController(
-                              text: '${controller.downPaymentPercen.value}'),
+                              text:
+                                  '${controller.downPaymentPercen.value.toStringAsFixed(2)}'),
                           suffix: Text('%',
                               style: primaryTextStyle.copyWith(fontSize: 18)),
                           hintText: 'Persen',
@@ -160,10 +161,11 @@ class KprView extends GetView<KprController> {
               CustomButton(
                   text: 'Mulai Simulasikan',
                   onPressed: () {
-                    controller.calculateKpr();
+                    controller.validateForm();
                   }),
               SizedBox(height: 8),
               CustomButton(
+                  color: Colors.grey,
                   text: 'Reset',
                   onPressed: () {
                     controller.resetFormKpr();

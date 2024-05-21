@@ -8,6 +8,8 @@ class DashboardController extends GetxController {
     tabIndex = index;
     if ((index == 2 || index == 3) &&
         await AuthLocalDataSource.statusLogin() == false) {
+      Get.snackbar('Silahkan Login Terlebih Dahulu',
+          'Anda Perlu Login Untuk Mengakses Fitur Ini');
       Get.toNamed('/login');
     }
     update();

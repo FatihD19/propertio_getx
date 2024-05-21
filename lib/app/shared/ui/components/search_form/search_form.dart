@@ -47,12 +47,12 @@ class SearchForm extends StatelessWidget {
               ),
             ),
           ),
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () {
-              Get.find<SearchFormController>().modalFilterType();
-            },
-          ),
+          // IconButton(
+          //   icon: Icon(Icons.settings),
+          //   onPressed: () {
+          //     Get.find<SearchFormController>().modalFilterType();
+          //   },
+          // ),
         ],
       ),
     );
@@ -86,10 +86,10 @@ class SearchFormController extends GetxController {
         children: [
           Column(
             children: [
-              DropdownType(selectedType, (value) {
-                selectedType = value!;
-                print(value);
-              }),
+              // DropdownType(selectedType, (value) {
+              //   selectedType = value!;
+              //   print(value);
+              // }),
               SizedBox(height: 16),
               CustomButton(
                   text: 'cari',

@@ -30,6 +30,30 @@ class KprController extends GetxController {
             100;
   }
 
+  void validateForm() {
+    if (propertyPriceController.text.isEmpty) {
+      Get.snackbar('Error', 'Harga Properti tidak boleh kosong',
+          duration: Duration(seconds: 1));
+      return;
+    }
+    if (downPaymentController.text.isEmpty) {
+      Get.snackbar('Error', 'Uang Muka tidak boleh kosong',
+          duration: Duration(seconds: 1));
+      return;
+    }
+    if (interestRateController.text.isEmpty) {
+      Get.snackbar('Error', 'Suku Bunga tidak boleh kosong',
+          duration: Duration(seconds: 1));
+      return;
+    }
+    if (loanTermController.text.isEmpty) {
+      Get.snackbar('Error', 'Jangka Waktu tidak boleh kosong',
+          duration: Duration(seconds: 1));
+      return;
+    }
+    calculateKpr();
+  }
+
   void calculateKpr() {
     isCalculated(false);
     var input = LoanSimulationInput(

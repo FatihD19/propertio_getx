@@ -41,25 +41,29 @@ class ProjectView extends GetView<ProjectController> {
         if (controller.isLoading.value) {
           return Center(child: CircularProgressIndicator());
         } else {
-          return Column(
-            children: [
-              Column(
-                  children: controller.projectData.value.data!.projects!
-                      .map((proyek) {
-                return ProyekCard(proyek);
-              }).toList()),
-              NavigationButton(
-                currentPage:
-                    controller.projectData.value.data!.pagination!.currentPage!,
-                lastPage:
-                    controller.projectData.value.data!.pagination!.lastPage!,
-                implementLogic: (page) {
-                  controller.fetchProjectData(page: page);
-                },
-                tag: 'project',
-              ),
-            ],
-          );
+          return controller.projectData.value.data!.projects!.isEmpty
+              ? Center(
+                  child: Text('Data kosong',
+                      style: primaryTextStyle.copyWith(fontSize: 16)))
+              : Column(
+                  children: [
+                    Column(
+                        children: controller.projectData.value.data!.projects!
+                            .map((proyek) {
+                      return ProyekCard(proyek);
+                    }).toList()),
+                    NavigationButton(
+                      currentPage: controller
+                          .projectData.value.data!.pagination!.currentPage!,
+                      lastPage: controller
+                          .projectData.value.data!.pagination!.lastPage!,
+                      implementLogic: (page) {
+                        controller.fetchProjectData(page: page);
+                      },
+                      tag: 'project',
+                    ),
+                  ],
+                );
         }
       });
     }
@@ -79,13 +83,13 @@ class ProjectView extends GetView<ProjectController> {
             child: ListView(
               children: [
                 header(),
-                // Obx(() {
-                //   return DropdownType(controller.selectedType.string, (value) {
-                //     controller.selectedType = value!.obs;
-                //     print(value);
-                //     controller.fetchProjectData(type: value);
-                //   });
-                // }),
+                Obx(() {
+                  return DropdownType(controller.selectedType.value, (value) {
+                    controller.selectedType.value = value!;
+                    print(value);
+                    controller.fetchProjectData(type: value);
+                  });
+                }),
                 SizedBox(height: 16),
                 listProject(),
               ],
