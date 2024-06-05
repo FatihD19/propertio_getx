@@ -1,9 +1,13 @@
 import 'package:get/get.dart';
 
+import '../modules/agen/bindings/agen_binding.dart';
+import '../modules/agen/views/agen_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/detail_project/bindings/detail_project_binding.dart';
 import '../modules/detail_project/views/detail_project_view.dart';
+import '../modules/detail_unit/bindings/detail_unit_binding.dart';
+import '../modules/detail_unit/views/detail_unit_view.dart';
 import '../modules/favorite/bindings/favorite_binding.dart';
 import '../modules/favorite/views/favorite_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -41,6 +45,8 @@ class AppPages {
         FavoriteBinding(),
         ProfileBinding(),
         KprBinding(),
+        AgenBinding(),
+        ProjectBinding(),
       ],
     ),
     GetPage(
@@ -69,13 +75,23 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DETAIL_PROJECT,
-      page: () => const DetailProjectView(),
+      page: () => DetailProjectView(),
       bindings: [DetailProjectBinding(), ProjectBinding()],
     ),
     GetPage(
       name: _Paths.KPR,
       page: () => KprView(),
       binding: KprBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_UNIT,
+      page: () => const DetailUnitView(),
+      binding: DetailUnitBinding(),
+    ),
+    GetPage(
+      name: _Paths.AGEN,
+      page: () => AgenView(),
+      binding: AgenBinding(),
     ),
   ];
 }

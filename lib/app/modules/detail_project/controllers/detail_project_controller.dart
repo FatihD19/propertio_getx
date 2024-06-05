@@ -18,10 +18,10 @@ class DetailProjectController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    fetchDetailProjectData(slug: slug);
+    fetchDetailProjectData();
   }
 
-  Future<void> fetchDetailProjectData({required String slug}) async {
+  Future<void> fetchDetailProjectData() async {
     isLoading(true);
     final result = await _projectRemoteDataSource.getDetailProject(slug);
     isLoading(false);

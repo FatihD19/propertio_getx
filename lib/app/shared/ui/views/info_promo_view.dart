@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/api_path.dart';
 
 import 'package:propertio_getx/app/constants/theme.dart';
+import 'package:propertio_getx/app/shared/ui/views/virtual_view.dart';
 
 import 'package:shimmer/shimmer.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -88,11 +89,11 @@ class InfoPromoCarousel extends StatelessWidget {
                 left: MediaQuery.of(context).size.width / 2 - 76,
                 child: GestureDetector(
                   onTap: () {
-                    launchUrl(Uri.parse('${virtualUrl}'));
-                    // Navigator.push(context,
-                    //     MaterialPageRoute(builder: (context) {
-                    //   return VirtualView();
-                    // }));
+                    // launchUrl(Uri.parse('${virtualUrl}'));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return VirtualView();
+                    }));
                   },
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),

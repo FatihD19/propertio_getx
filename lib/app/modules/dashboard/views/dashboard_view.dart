@@ -4,18 +4,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/theme.dart';
+import 'package:propertio_getx/app/modules/agen/views/agen_view.dart';
 import 'package:propertio_getx/app/modules/favorite/views/favorite_view.dart';
 import 'package:propertio_getx/app/modules/home/views/home_view.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:propertio_getx/app/modules/kpr/views/kpr_view.dart';
 import 'package:propertio_getx/app/modules/profile/views/profile_view.dart';
+import 'package:propertio_getx/app/shared/ui/components/sidebar.dart';
 import '../controllers/dashboard_controller.dart';
 
 class DashboardView extends StatelessWidget {
   DashboardView({Key? key}) : super(key: key);
   final List<Widget> pages = [
     HomeView(),
-    KprView(),
+    AgenView(forDashboard: true),
     FavoriteView(),
     ProfileView(),
   ];
@@ -28,7 +30,7 @@ class DashboardView extends StatelessWidget {
                 centerTitle: true,
                 title: Image.asset('assets/lg_propertio_home.png'),
               ),
-              // drawer: SideBar(forDashboard: true),
+              drawer: SideBar(forDashboard: true),
               body: pages[controller.tabIndex],
               bottomNavigationBar: BottomNavigationBar(
                   items: <BottomNavigationBarItem>[
@@ -37,8 +39,8 @@ class DashboardView extends StatelessWidget {
                       label: 'Home',
                     ),
                     BottomNavigationBarItem(
-                      icon: Icon(Icons.credit_card),
-                      label: 'KPR',
+                      icon: Icon(Icons.people),
+                      label: 'Agent',
                     ),
                     BottomNavigationBarItem(
                       icon: Icon(Icons.favorite_outline_rounded),
@@ -55,20 +57,6 @@ class DashboardView extends StatelessWidget {
                   unselectedItemColor: secondaryColor,
                   selectedItemColor: primaryColor),
             ));
-  }
-}
-
-class AgentView extends StatelessWidget {
-  const AgentView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'AgentView is working',
-        style: TextStyle(fontSize: 20),
-      ),
-    );
   }
 }
 

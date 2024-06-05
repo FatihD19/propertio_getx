@@ -6,6 +6,7 @@ import 'package:propertio_getx/app/shared/ui/components/button.dart';
 import 'package:propertio_getx/app/shared/ui/components/dropdown_type/dropdown_type.dart';
 import 'package:propertio_getx/app/shared/ui/components/pagination_button/pagination_button.dart';
 import 'package:propertio_getx/app/shared/ui/components/search_form/search_form.dart';
+import 'package:propertio_getx/app/shared/ui/components/sidebar.dart';
 import 'package:propertio_getx/app/shared/ui/widgets/proyek_card.dart';
 
 import '../controllers/project_controller.dart';
@@ -69,10 +70,8 @@ class ProjectView extends GetView<ProjectController> {
     }
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('ProjectView'),
-          centerTitle: true,
-        ),
+        appBar: propertioAppBar(),
+        drawer: SideBar(),
         body: Container(
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           color: bgColor1,
@@ -87,7 +86,9 @@ class ProjectView extends GetView<ProjectController> {
                   return DropdownType(controller.selectedType.value, (value) {
                     controller.selectedType.value = value!;
                     print(value);
-                    controller.fetchProjectData(type: value);
+                    controller.fetchProjectData(
+                        type: value,
+                        query: controller.searchController.value.text);
                   });
                 }),
                 SizedBox(height: 16),

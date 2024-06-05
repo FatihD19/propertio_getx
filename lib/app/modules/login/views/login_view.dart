@@ -89,18 +89,19 @@ class LoginView extends GetView<LoginController> {
     Widget actionBtn() {
       return Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Tidak dapat mengingat kata sandi anda?',
-                  style: primaryTextStyle.copyWith(fontSize: 12)),
-              TextButton(
-                onPressed: () {},
-                child: Text('Klik disini',
-                    style: thirdTextStyle.copyWith(fontSize: 12)),
-              )
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Text('Tidak dapat mengingat kata sandi anda?',
+          //         style: primaryTextStyle.copyWith(fontSize: 12)),
+          //     TextButton(
+          //       onPressed: () {},
+          //       child: Text('Klik disini',
+          //           style: thirdTextStyle.copyWith(fontSize: 12)),
+          //     )
+          //   ],
+          // ),
+          SizedBox(height: 24),
           Obx(() {
             if (controller.isLoading.value) {
               return CircularProgressIndicator();
@@ -119,20 +120,20 @@ class LoginView extends GetView<LoginController> {
               },
               child:
                   Text('Lewati', style: thirdTextStyle.copyWith(fontSize: 12))),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Belum memiliki akun?',
-                  style: primaryTextStyle.copyWith(fontSize: 12)),
-              TextButton(
-                onPressed: () {
-                  Get.to(() => VerisonPage());
-                },
-                child: Text('Klik disini',
-                    style: thirdTextStyle.copyWith(fontSize: 12)),
-              )
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Text('Belum memiliki akun?',
+          //         style: primaryTextStyle.copyWith(fontSize: 12)),
+          //     TextButton(
+          //       onPressed: () {
+          //         Get.to(() => VerisonPage());
+          //       },
+          //       child: Text('Klik disini',
+          //           style: thirdTextStyle.copyWith(fontSize: 12)),
+          //     )
+          //   ],
+          // ),
         ],
       );
     }

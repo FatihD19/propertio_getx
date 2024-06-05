@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/api_path.dart';
 import 'package:propertio_getx/app/data/model/proyek_model.dart';
 
 import 'package:propertio_getx/app/data/model/unit_model.dart';
+import 'package:propertio_getx/app/routes/app_pages.dart';
 import 'package:propertio_getx/app/shared/ui/components/custom_chip.dart';
 
 import 'package:propertio_getx/app/shared/ui/components/container_style.dart';
@@ -23,11 +25,7 @@ class SmallProyekCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(
-        //         builder: (context) =>
-        //             DetailProyekPage(proyek!.slug.toString())));
+        Get.toNamed(Routes.DETAIL_PROJECT, arguments: '${proyek?.slug}');
       },
       child: Card(
         margin: EdgeInsets.only(right: 16, top: 4, bottom: 4),
@@ -145,6 +143,7 @@ class SmallProyekCardUnit extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        Get.toNamed(Routes.DETAIL_UNIT, arguments: '${unit?.unitCode}');
         // Navigator.push(
         //     context,
         //     MaterialPageRoute(

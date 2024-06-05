@@ -12,6 +12,8 @@ abstract class Routes {
   static const PROFILE = _Paths.PROFILE;
   static const DETAIL_PROJECT = _Paths.DETAIL_PROJECT;
   static const KPR = _Paths.KPR;
+  static const DETAIL_UNIT = _Paths.DETAIL_UNIT;
+  static const AGEN = _Paths.AGEN;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const PROFILE = '/profile';
   static const DETAIL_PROJECT = '/detail-project';
   static const KPR = '/kpr';
+  static const DETAIL_UNIT = '/detail-unit';
+  static const AGEN = '/agen';
 }

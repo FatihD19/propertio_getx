@@ -14,8 +14,8 @@ class AgentRemoteDataSource {
     if (await NetworkInfoException.isConnected() == false) {
       return const Left('Tidak Ada Koneksi Internet');
     }
-    var url = Uri.parse(ApiPath.baseUrl +
-        '/v1/agent?search=${search ?? ''}&?page=${page ?? 1}');
+    var url = Uri.parse(
+        ApiPath.baseUrl + '/v1/agent?search=${search ?? ''}&page=${page ?? 1}');
     final response = await http.get(url);
 
     print(response.body);

@@ -9,7 +9,8 @@ class DropdownType extends StatelessWidget {
   final void Function(String?)? onChanged;
 
   DropdownType(this.selectedItem, this.onChanged, {super.key}) {
-    Get.put(PropertyTypeController(PropertiRemoteDataSource()));
+    Get.put(PropertyTypeController(PropertiRemoteDataSource()),
+        permanent: true);
   }
 
   @override

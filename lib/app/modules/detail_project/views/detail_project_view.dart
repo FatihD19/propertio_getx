@@ -25,7 +25,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../controllers/detail_project_controller.dart';
 
 class DetailProjectView extends GetView<DetailProjectController> {
-  const DetailProjectView({Key? key}) : super(key: key);
+  final slug = Get.arguments;
+  DetailProjectView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     Widget listUnit(
@@ -104,7 +105,7 @@ class DetailProjectView extends GetView<DetailProjectController> {
                       headline: proyek.headline.toString(),
                       address: proyek.address,
                       countViews: proyek.countViews,
-                      // shareUrl: ShareUrl.project(slug),
+                      shareUrl: ShareUrl.project(slug),
                       postedAt: proyek.postedAt,
                       isFavorite: proyek.isFavorites,
                       projectCode: proyek.projectCode,

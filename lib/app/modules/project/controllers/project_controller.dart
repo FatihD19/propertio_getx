@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:propertio_getx/app/data/datasource/project_remote_datasource.dart';
 
 import 'package:propertio_getx/app/data/model/responses/list_project_response_model.dart';
+import 'package:propertio_getx/app/routes/app_pages.dart';
 
 class ProjectController extends GetxController {
   final ProjectRemoteDataSource _projectRemoteDataSource;
@@ -39,5 +40,11 @@ class ProjectController extends GetxController {
       },
     );
     // projectData.refresh();
+  }
+
+  void searchBylocation(String location) {
+    fetchProjectData(query: location);
+    searchController.value.text = location;
+    Get.toNamed(Routes.PROJECT);
   }
 }

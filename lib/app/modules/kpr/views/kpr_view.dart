@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:propertio_getx/app/constants/theme.dart';
 import 'package:propertio_getx/app/shared/ui/components/button.dart';
+import 'package:propertio_getx/app/shared/ui/components/sidebar.dart';
 import 'package:propertio_getx/app/shared/ui/components/textfieldForm.dart';
 import 'package:propertio_getx/app/shared/ui/widgets/item_angsuran.dart';
 import 'package:propertio_getx/app/shared/utils.dart';
@@ -285,20 +286,23 @@ class KprView extends GetView<KprController> {
       });
     }
 
-    return Container(
-      color: bgColor1,
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-      child: ListView(
-        children: [
-          Image.asset('assets/img_kpr.png'),
-          SizedBox(height: 16),
-          form(),
-          SizedBox(height: 16),
-          listAngsuran(),
-          SizedBox(height: 16),
-          faqKpr(),
-        ],
-      ),
-    );
+    return Scaffold(
+        appBar: propertioAppBar(),
+        drawer: SideBar(),
+        body: Container(
+          color: bgColor1,
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          child: ListView(
+            children: [
+              Image.asset('assets/img_kpr.png'),
+              SizedBox(height: 16),
+              form(),
+              SizedBox(height: 16),
+              listAngsuran(),
+              SizedBox(height: 16),
+              faqKpr(),
+            ],
+          ),
+        ));
   }
 }
