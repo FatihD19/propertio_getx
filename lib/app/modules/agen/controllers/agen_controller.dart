@@ -4,6 +4,7 @@ import 'package:propertio_getx/app/data/datasource/agent_remote_datasource.dart'
 import 'package:propertio_getx/app/data/model/responses/detail_agent_response_model.dart';
 import 'package:propertio_getx/app/data/model/responses/list_agent_response_model.dart';
 import 'package:propertio_getx/app/modules/agen/views/detail_agen_view.dart';
+import 'package:propertio_getx/app/routes/app_pages.dart';
 
 class AgenController extends GetxController {
   final AgentRemoteDataSource _agentRemoteDataSource;
@@ -48,8 +49,8 @@ class AgenController extends GetxController {
   }
 
   void navigateToDetailAgent(String id) async {
+    Get.toNamed(Routes.DETAIL_AGEN, arguments: id);
     getDetailAgent(id);
-    Get.to(() => DetailAgenView(), arguments: id);
   }
 
   Future<void> getDetailAgent(String id) async {

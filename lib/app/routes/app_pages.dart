@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:propertio_getx/app/modules/agen/views/detail_agen_view.dart';
 
 import '../modules/agen/bindings/agen_binding.dart';
 import '../modules/agen/views/agen_view.dart';
@@ -91,6 +92,11 @@ class AppPages {
     GetPage(
       name: _Paths.AGEN,
       page: () => AgenView(),
+      binding: AgenBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_AGEN,
+      page: () => DetailAgenView(),
       binding: AgenBinding(),
     ),
   ];

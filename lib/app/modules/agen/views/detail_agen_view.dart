@@ -15,7 +15,7 @@ class DetailAgenView extends StatelessWidget {
   DetailAgenView({super.key});
   @override
   Widget build(BuildContext context) {
-    final agenController = Get.find<AgenController>();
+    final agenController = Get.put(Get.find<AgenController>());
 
     return Scaffold(
       body: Obx(() {

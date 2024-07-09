@@ -14,6 +14,7 @@ abstract class Routes {
   static const KPR = _Paths.KPR;
   static const DETAIL_UNIT = _Paths.DETAIL_UNIT;
   static const AGEN = _Paths.AGEN;
+  static const DETAIL_AGEN = _Paths.DETAIL_AGEN;
 }
 
 abstract class _Paths {
@@ -29,4 +30,5 @@ abstract class _Paths {
   static const KPR = '/kpr';
   static const DETAIL_UNIT = '/detail-unit';
   static const AGEN = '/agen';
+  static const DETAIL_AGEN = '/detail-agen';
 }
