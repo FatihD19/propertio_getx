@@ -1,0 +1,911 @@
+{
+    "status": "success",
+    "message": "berhasil memuat data",
+    "data": {
+        "project_recomendation": [
+            {
+                "project_code": "PJ_Apartemen-022024211458773",
+                "title": "Proyek Perumahan Griya Astha",
+                "headline": "Proyek Perumahan Griya Astha",
+                "slug": "proyek-perumahan-griya-astha",
+                "property_type": {
+                    "name": "Apartemen",
+                    "icon": "storage/data/image/property_type/U-PP-Apartemen-20231231.svg"
+                },
+                "posted_at": "2024-02-21 14:45:20",
+                "address": {
+                    "address": "Jalan Naga",
+                    "district": "SINUNUKAN",
+                    "city": "KABUPATEN MANDAILING NATAL",
+                    "province": "SUMATERA UTARA"
+                },
+                "count_unit": 1,
+                "price": "2000000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-proyek_perumahan_gri1-20240221.jpeg",
+                "count_views": 12,
+                "certificate": "SHGB",
+                "stock_unit": 0,
+                "count_leads": 4,
+                "status": "active",
+                "completed_at": "2020",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Unit 36",
+                        "unit_code": "U_UNI-022024211433",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit3-1-20240221.jpeg",
+                        "price": "2000000000",
+                        "bedroom": "10",
+                        "bathroom": "10",
+                        "area": "100",
+                        "stock": "0"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-052024152169645",
+                "title": "Perumahan CBxGr Baru di Jakarta Selatan",
+                "headline": "Rumah Mewah di Jakarta Selatan CBxGr",
+                "slug": "rumah-mewah-di-jakarta-selatan-cbxgr",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-05-15 21:59:30",
+                "address": {
+                    "address": "Jl. Mewah No. 1",
+                    "district": "LEMBAH GUMANTI",
+                    "city": "KABUPATEN SOLOK",
+                    "province": "SUMATERA BARAT"
+                },
+                "count_unit": 7,
+                "price": "200000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-perumahan_c_bx_gr_ba0-21420240515.jpg",
+                "count_views": 18,
+                "certificate": "SHGB",
+                "stock_unit": 70,
+                "count_leads": 19,
+                "status": "active",
+                "completed_at": "2012",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Unit W9aQz",
+                        "unit_code": "U_UNI-052024161625",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-22420240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit XIrl0",
+                        "unit_code": "U_UNI-052024161653",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-23320240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit iatJB",
+                        "unit_code": "U_UNI-052024161653",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-75420240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit IuVRm",
+                        "unit_code": "U_UNI-052024161698",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-65220240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit o6WMR",
+                        "unit_code": "U_UNI-052024161627",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-72620240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit laXtH",
+                        "unit_code": "U_UNI-052024161634",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-36520240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit X5JqC",
+                        "unit_code": "U_UNI-052024181458",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-25720240518.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "10080",
+                        "stock": "10"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-022024222023760",
+                "title": "Perumahan jati rawa 19",
+                "headline": "Rumah Jati rawa 19",
+                "slug": "rumah-jati-rawa-19",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-22 20:34:23",
+                "address": {
+                    "address": "Jalan Jatirawa no 14 A",
+                    "district": "TILAMUTA",
+                    "city": "KABUPATEN BOALEMO",
+                    "province": "GORONTALO"
+                },
+                "count_unit": 3,
+                "price": "64946",
+                "photo": null,
+                "count_views": 54,
+                "certificate": "Letter C",
+                "stock_unit": 19000,
+                "count_leads": 8,
+                "status": "active",
+                "completed_at": "2022",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Ucup Developer",
+                    "picture_profile_file": "storage/data/image/users/LFT-ucup-developer-20240229.png"
+                },
+                "units": [
+                    {
+                        "title": "Uhuy",
+                        "unit_code": "U_UHU-022024222313",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-uhuy-1-20240222.jpg",
+                        "price": "800000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "200",
+                        "stock": "12"
+                    },
+                    {
+                        "title": "rhhdhd",
+                        "unit_code": "U_RHH-042024022043",
+                        "photo": null,
+                        "price": "64946",
+                        "bedroom": "0",
+                        "bathroom": "0",
+                        "area": "0",
+                        "stock": "9494"
+                    },
+                    {
+                        "title": "rhhdhd",
+                        "unit_code": "U_RHH-042024022074",
+                        "photo": null,
+                        "price": "64946",
+                        "bedroom": "0",
+                        "bathroom": "0",
+                        "area": "0",
+                        "stock": "9494"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-022024202125144",
+                "title": "Project Perumahan Bumi Ketapang Damai",
+                "headline": "Project Perumahan Bumi Ketapang Damai Project Perumahan Bumi Ketapang Damai",
+                "slug": "project-perumahan-bumi-ketapang-damai-project-perumahan-bumi-ketapang-damai",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-21 00:38:16",
+                "address": {
+                    "address": "Jl. Baruna Timur X, No. 370",
+                    "district": "PULAU BANYAK BARAT",
+                    "city": "KABUPATEN ACEH SINGKIL",
+                    "province": "ACEH"
+                },
+                "count_unit": 1,
+                "price": "510000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-project_perumahan_bu0-20240220.jpg",
+                "count_views": 23,
+                "certificate": "SHM",
+                "stock_unit": 12,
+                "count_leads": 6,
+                "status": "active",
+                "completed_at": "2024",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "TIPE 36",
+                        "unit_code": "U_TIP-022024202277",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-t_i_p-1-20240220.jpg",
+                        "price": "510000000",
+                        "bedroom": "1",
+                        "bathroom": "1",
+                        "area": "200",
+                        "stock": "12"
+                    }
+                ]
+            }
+        ],
+        "property_recomendation": [
+            {
+                "property_code": "PT_Villa-072024011610605",
+                "title": "properti testing 123",
+                "headline": "testing",
+                "slug": "testing",
+                "property_type": {
+                    "name": "Villa",
+                    "icon": "storage/data/image/property_type/U-PP-Villa-20231216.svg"
+                },
+                "listing_type": "sell",
+                "posted_at": "2024-07-01 16:32:34",
+                "price": "80000000000",
+                "photo": "storage/data/image/property/property_photos/P-PP-properti_testing1230-65620240701.png",
+                "address": {
+                    "address": "Yogyakarta, sleman, depok 123",
+                    "district": "PURWOSARI",
+                    "city": "KABUPATEN GUNUNG KIDUL",
+                    "province": "DI YOGYAKARTA"
+                },
+                "certificate": "SHM",
+                "count_views": 2,
+                "count_leads": 0,
+                "status": "active",
+                "bedroom": "10",
+                "bathroom": "3",
+                "is_favorites": false,
+                "area": "42",
+                "agent": {
+                    "full_name": "Alex (Agen)",
+                    "picture_profile_file": "storage/data/image/users/LFT-alex-agen-20240219.jpeg"
+                },
+                "property_photo": [
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-properti_testing1230-65620240701.png",
+                        "is_cover": "1"
+                    }
+                ]
+            },
+            {
+                "property_code": "PT_Rumah-022024201820432",
+                "title": "Rumah cluster elite Sawojaja",
+                "headline": "Rumah cluster elite Sawojaja tengah kota tingkat 5",
+                "slug": "rumah-baru-minimalis-siap-huni-sawojaja",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "listing_type": "sell",
+                "posted_at": "2024-05-12 23:32:12",
+                "price": "997000000",
+                "photo": "storage/data/image/property/property_photos/P-PP-rumah_baru_minimalis0-20240220.png",
+                "address": {
+                    "address": "Jl simpang wisnuwardhana Kedungkandang",
+                    "district": "KRATON",
+                    "city": "KOTA YOGYAKARTA",
+                    "province": "DI YOGYAKARTA"
+                },
+                "certificate": "SHM",
+                "count_views": 76,
+                "count_leads": 43,
+                "status": "active",
+                "bedroom": "3",
+                "bathroom": "1",
+                "is_favorites": false,
+                "area": "500",
+                "agent": {
+                    "full_name": "Alex (Agen)",
+                    "picture_profile_file": "storage/data/image/users/LFT-alex-agen-20240219.jpeg"
+                },
+                "property_photo": [
+                    {
+                        "caption": "as",
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_baru_minimalis0-20240220.png",
+                        "is_cover": "1"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_baru_minimalis1-23420240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_2-99820240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_3-30620240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_4-49220240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_5-09820240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_6-42120240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_7-22520240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_8-41420240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_9-63720240512.jpg",
+                        "is_cover": "0"
+                    },
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-rumah_cluster_elite_10-85720240512.jpg",
+                        "is_cover": "0"
+                    }
+                ]
+            },
+            {
+                "property_code": "PT_Rumah-062024010052330",
+                "title": "Perumahan Di Jakarta Barat XFWcA",
+                "headline": "Rumah di Jakarta",
+                "slug": "rumah-di-jakarta-46",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "listing_type": "sell",
+                "posted_at": "2024-06-01 00:08:30",
+                "price": "1000000000",
+                "photo": "storage/data/image/property/property_photos/P-PP-perumahan_di_jakarta0-60220240601.jpg",
+                "address": {
+                    "address": "Jl. Citra Kalibiru No. 1",
+                    "district": "PALMERAH",
+                    "city": "KOTA JAKARTA BARAT",
+                    "province": "DKI JAKARTA"
+                },
+                "certificate": "SHGB",
+                "count_views": 4,
+                "count_leads": 0,
+                "status": "active",
+                "bedroom": "3",
+                "bathroom": "2",
+                "is_favorites": false,
+                "area": "500",
+                "agent": {
+                    "full_name": "Alex (Agen)",
+                    "picture_profile_file": "storage/data/image/users/LFT-alex-agen-20240219.jpeg"
+                },
+                "property_photo": [
+                    {
+                        "caption": null,
+                        "filename": "storage/data/image/property/property_photos/P-PP-perumahan_di_jakarta0-60220240601.jpg",
+                        "is_cover": "1"
+                    }
+                ]
+            }
+        ],
+        "project_latest": [
+            {
+                "project_code": "PJ_Rumah-062024021766699",
+                "title": "Testing Proyek Di Jakarta Barat lkOPn",
+                "headline": "Proyek Di Jakarta Barat lkOPn",
+                "slug": "proyek-di-jakarta-barat-lkopn",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-06-02 17:16:06",
+                "address": {
+                    "address": "Jl. Citra Kalibiru No. 1",
+                    "district": "LEMBAH GUMANTI",
+                    "city": "KABUPATEN SOLOK",
+                    "province": "SUMATERA BARAT"
+                },
+                "count_unit": 15,
+                "price": "1",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-testing_proyek_di_ja0-60220240602.jpg",
+                "count_views": 15,
+                "certificate": "SHGB",
+                "stock_unit": 130,
+                "count_leads": 2,
+                "status": "active",
+                "completed_at": "2012",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Testing Unit DFPEn",
+                        "unit_code": "U_TES-062024021711",
+                        "photo": null,
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit JYTch",
+                        "unit_code": "U_TES-062024021794",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-63120240602.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit vZscT",
+                        "unit_code": "U_TES-062024021744",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-78520240602.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "1222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
+                        "unit_code": "U_122-062024021714",
+                        "photo": null,
+                        "price": "1",
+                        "bedroom": "0",
+                        "bathroom": "0",
+                        "surface_area": "0",
+                        "building_area": "0",
+                        "stock": "0"
+                    },
+                    {
+                        "title": "hsdfdbhdbdf",
+                        "unit_code": "U_HSD-062024021755",
+                        "photo": null,
+                        "price": "1000000000000000",
+                        "bedroom": null,
+                        "bathroom": null,
+                        "surface_area": "0",
+                        "building_area": null,
+                        "stock": "0"
+                    },
+                    {
+                        "title": "Testing Unit foDNe",
+                        "unit_code": "U_TES-062024282314",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-08220240628.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit tSaMm",
+                        "unit_code": "U_TES-062024282361",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-72120240628.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit HoWwB",
+                        "unit_code": "U_TES-062024291872",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-78920240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit WsxWm",
+                        "unit_code": "U_TES-062024291884",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-58620240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit LVTeG",
+                        "unit_code": "U_TES-062024291892",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-08920240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit Gdrza",
+                        "unit_code": "U_TES-062024291859",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-07420240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit cpKTs",
+                        "unit_code": "U_TES-062024291832",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-05520240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit zohie",
+                        "unit_code": "U_TES-062024291859",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-53120240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Testing Unit XnOcF",
+                        "unit_code": "U_TES-062024291846",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-testi-1-55720240629.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "unit yogyakarta 123",
+                        "unit_code": "U_UNI-072024011855",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-97020240701.png",
+                        "price": "20000000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "12",
+                        "building_area": "12",
+                        "stock": "10"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-052024152169645",
+                "title": "Perumahan CBxGr Baru di Jakarta Selatan",
+                "headline": "Rumah Mewah di Jakarta Selatan CBxGr",
+                "slug": "rumah-mewah-di-jakarta-selatan-cbxgr",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-05-15 21:59:30",
+                "address": {
+                    "address": "Jl. Mewah No. 1",
+                    "district": "LEMBAH GUMANTI",
+                    "city": "KABUPATEN SOLOK",
+                    "province": "SUMATERA BARAT"
+                },
+                "count_unit": 7,
+                "price": "200000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-perumahan_c_bx_gr_ba0-21420240515.jpg",
+                "count_views": 18,
+                "certificate": "SHGB",
+                "stock_unit": 70,
+                "count_leads": 19,
+                "status": "active",
+                "completed_at": "2012",
+                "is_favorites": false,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Unit W9aQz",
+                        "unit_code": "U_UNI-052024161625",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-22420240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit XIrl0",
+                        "unit_code": "U_UNI-052024161653",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-23320240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit iatJB",
+                        "unit_code": "U_UNI-052024161653",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-75420240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit IuVRm",
+                        "unit_code": "U_UNI-052024161698",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-65220240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit o6WMR",
+                        "unit_code": "U_UNI-052024161627",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-72620240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit laXtH",
+                        "unit_code": "U_UNI-052024161634",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-36520240516.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    },
+                    {
+                        "title": "Unit X5JqC",
+                        "unit_code": "U_UNI-052024181458",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-25720240518.jpg",
+                        "price": "200000000",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "surface_area": "10080",
+                        "building_area": null,
+                        "stock": "10"
+                    }
+                ]
+            }
+        ],
+        "agents": [
+            {
+                "account_id": "ID_06202419175015",
+                "email": "agenttesting793@mail.com",
+                "role": "agent",
+                "full_name": "agent testing ZfEQh",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-zfeqh-20240619.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_05202430203124",
+                "email": "agenttesting695@mail.com",
+                "role": "agent",
+                "full_name": "agent testing CNITk",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-cnitk-20240530.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_05202405017849",
+                "email": "agentesting219@mail.com",
+                "role": "agent",
+                "full_name": "agent testing",
+                "phone": "6208123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-20240505.jpg",
+                "image_cover": null,
+                "address": "Jl. Testing No. 1, Jakarta",
+                "city": "KABUPATEN SOLOK",
+                "province": "SUMATERA BARAT",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_06202427213317",
+                "email": "agenttesting4044@mail.com",
+                "role": "agent",
+                "full_name": "agent testing LFkvH",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-lfkvh-20240627.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_05202430205594",
+                "email": "agenttesting893@mail.com",
+                "role": "agent",
+                "full_name": "agent testing jrtwR",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-jrtwr-20240530.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_06202419178931",
+                "email": "agenttesting822@mail.com",
+                "role": "agent",
+                "full_name": "agent testing dphci",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-dphci-20240619.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_06202406197584",
+                "email": "testingagentdxTibRqGNQ@mail.com",
+                "role": "agent",
+                "full_name": "a XRyVI",
+                "phone": "625864537253",
+                "picture_profile_file": "storage/data/image/users/LFT-a-xryvi-20240606.png",
+                "image_cover": null,
+                "address": "Yogyakarta",
+                "city": "KOTA YOGYAKARTA",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_05202430234630",
+                "email": "agenttesting278@mail.com",
+                "role": "agent",
+                "full_name": "agent testing cxEqb",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-cxeqb-20240530.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_05202430202845",
+                "email": "agenttesting878@mail.com",
+                "role": "agent",
+                "full_name": "agent testing RshGz",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-rshgz-20240530.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            },
+            {
+                "account_id": "ID_06202419179234",
+                "email": "agenttesting428@mail.com",
+                "role": "agent",
+                "full_name": "agent testing xpWqX",
+                "phone": "628123456789",
+                "picture_profile_file": "storage/data/image/users/LFT-agent-testing-xpwqx-20240619.png",
+                "image_cover": null,
+                "address": "Jalan Test",
+                "city": "KABUPATEN SLEMAN",
+                "province": "DI YOGYAKARTA",
+                "description": null,
+                "website": null,
+                "area_specialist": null,
+                "languages": [],
+                "specialists": []
+            }
+        ]
+    }
+}

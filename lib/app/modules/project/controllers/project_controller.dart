@@ -7,7 +7,7 @@ import 'package:propertio_getx/app/routes/app_pages.dart';
 
 class ProjectController extends GetxController {
   final ProjectRemoteDataSource _projectRemoteDataSource;
-  Rx<ListProjectModel> projectData = ListProjectModel().obs;
+  var projectData = Rxn<ListProjectModel>();
   var isLoading = false.obs;
   var errorMessage = RxString('');
   var isError = false.obs;

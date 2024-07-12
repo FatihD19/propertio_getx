@@ -1,0 +1,98 @@
+{
+    "status": "success",
+    "message": "berhasil memuat data",
+    "data": {
+        "unit_code": "U_RUM-022024221130",
+        "title": "Rumah Tipe 90",
+        "description": "<ul><li>Benefit Interior AC</li></ul>",
+        "surface_area": "200",
+        "building_area": "200",
+        "order": "2",
+        "stock": "8",
+        "floor": "2",
+        "bedroom": "2",
+        "bathroom": "2",
+        "garage": "2 mobil",
+        "price": "2000000000",
+        "power_supply": "450 Watt",
+        "water_type": "PAM",
+        "interior": "Kosong",
+        "road_access": "Gang Kecil",
+        "certificate": "SHM",
+        "project_title": "Perumahan Maguwo Indah",
+        "count_views": 30,
+        "posted_at": "2024-02-22 11:58:37",
+        "is_favorites": false,
+        "address": {
+            "address": "Jalan Naga",
+            "district": "WATES",
+            "city": "KABUPATEN KULON PROGO",
+            "province": "DI YOGYAKARTA",
+            "postal_code": "12012",
+            "latitude": "-7.8190970",
+            "longitude": "110.3731682"
+        },
+        "project_code": "PJ_Rumah-022024221186044",
+        "immersive_apps": null,
+        "developer": {
+            "account_id": "ID_12202308139308",
+            "email": "developer@mail.com",
+            "full_name": "Danish Widodo",
+            "phone": "62234234234",
+            "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg",
+            "image_cover": null,
+            "address": "Jln. Hangtuah",
+            "city": "KABUPATEN SOLOK SELATAN",
+            "province": "SUMATERA BARAT",
+            "description": "Saya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekar Saya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekar",
+            "website": "tes.com/properti",
+            "area_specialist": null
+        },
+        "property_type": {
+            "name": "Rumah",
+            "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+        },
+        "unit_photos": [
+            {
+                "caption": null,
+                "filename": "storage/data/image/unit/unit_photos/U-UP-rumah-1-20240222.jpg",
+                "is_cover": "1",
+                "type": "photo"
+            }
+        ],
+        "unit_video": null,
+        "unit_virtual_tour": null,
+        "unit_model": null,
+        "unit_documents": [],
+        "project_facilities": [
+            {
+                "name": "Pemanas Air",
+                "category": "perabot",
+                "icon": "storage/data/image/facility_type/U-PP-Pemanas Air-20231214.svg"
+            },
+            {
+                "name": "Solar Panel",
+                "category": "keunggulan",
+                "icon": "storage/data/image/facility_type/U-PP-Solar Panel-20231214.svg"
+            },
+            {
+                "name": "Sauna",
+                "category": "keunggulan",
+                "icon": "storage/data/image/facility_type/U-PP-Sauna-20231231.svg"
+            },
+            {
+                "name": "Kolam Renang",
+                "category": "fasilitas",
+                "icon": "storage/data/image/facility_type/U-PP-Kolam Renang-20231214.svg"
+            }
+        ],
+        "project_infrastructure": [
+            {
+                "type": "Pom Bensin",
+                "name": "Pom Mini XYC",
+                "icon": "storage/data/image/infrastructure_type/U-PP-Pom Bensin-20231214.svg",
+                "distance": null
+            }
+        ]
+    }
+}

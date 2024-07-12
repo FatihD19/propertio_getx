@@ -64,7 +64,7 @@ class DetailProjectView extends GetView<DetailProjectController> {
           ),
         );
       } else {
-        var proyek = controller.detailData.value.data!;
+        var proyek = controller.detailData.value!.data!;
         var cheapestUnit = proyek.units!.data!.isEmpty
             ? UnitModel(price: '0')
             : proyek.units!.data!.reduce((curr, next) =>
@@ -165,7 +165,7 @@ class DetailProjectView extends GetView<DetailProjectController> {
                         longitude: proyek.address!.longitude.toString()),
                     SizedBox(height: 16),
                     listUnit(
-                        controller.detailData.value.data?.units?.data ?? [],
+                        controller.detailData.value!.data?.units?.data ?? [],
                         '${proyek.projectCode}',
                         proyek.isFavorites!),
                     SizedBox(height: 16),

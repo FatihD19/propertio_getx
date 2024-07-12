@@ -1,0 +1,139 @@
+{
+    "status": "success",
+    "message": "berhasil memuat data",
+    "data": {
+        "id": 4,
+        "title": "Gedung Pusat Perbelanjaan",
+        "headline": "Gedung Pusat Perbelanjaan",
+        "address": {
+            "address": "Kadal",
+            "district": "KEMUNING",
+            "city": "KABUPATEN INDRAGIRI HILIR",
+            "province": "RIAU",
+            "postal_code": "32023",
+            "latitude": "-3.6687994",
+            "longitude": "119.9740534"
+        },
+        "property_type": {
+            "name": "Ruang usaha",
+            "icon": "storage/data/image/property_type/U-PP-Ruang usaha-20231216.svg"
+        },
+        "description": "Gedung Pusat Perbelanjaan",
+        "certificate": "Girik",
+        "completed_at": "2000",
+        "posted_at": "2024-02-15 17:38:12",
+        "count_views": 97,
+        "project_code": "PJ_Tanah-012024052266158",
+        "status": "active",
+        "is_favorites": false,
+        "siteplan_image": "storage/data/image/project/project_photos/siteplan/PJ-ST-gedung_pusat_perbela-20240121101258.png",
+        "immersive_siteplan": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "immersive_apps": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "unit_type": 1,
+        "unit_stock": 60,
+        "units": {
+            "data": [
+                {
+                    "title": "Unit Dari Admina",
+                    "unit_code": "U_UNI-012024072184",
+                    "photo": "storage/data/image/unit/unit_photos/U-UP-unit_-1-20240107.jpg",
+                    "price": "10000000000",
+                    "bedroom": "20",
+                    "bathroom": "2",
+                    "surface_area": "20",
+                    "building_area": "20",
+                    "stock": "60"
+                }
+            ],
+            "pagination": {
+                "current_page": 1,
+                "total": 1,
+                "per_page": 4,
+                "last_page": 1,
+                "next_page_url": null,
+                "prev_page_url": null,
+                "first_page_url": "https://beta.propertio.id/api/v1/project/gedung-pusat-perbelanjaan?page=1",
+                "last_page_url": "https://beta.propertio.id/api/v1/project/gedung-pusat-perbelanjaan?page=1",
+                "links": [
+                    {
+                        "url": null,
+                        "label": "&laquo;",
+                        "active": false
+                    },
+                    {
+                        "url": "https://beta.propertio.id/api/v1/project/gedung-pusat-perbelanjaan?page=1",
+                        "label": "1",
+                        "active": true
+                    },
+                    {
+                        "url": null,
+                        "label": "&raquo;",
+                        "active": false
+                    }
+                ]
+            }
+        },
+        "developer": {
+            "account_id": "ID_12202308139308",
+            "email": "developer@mail.com",
+            "full_name": "Danish Widodo",
+            "phone": "62234234234",
+            "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg",
+            "image_cover": null,
+            "address": "Jln. Hangtuah",
+            "city": "KABUPATEN SOLOK SELATAN",
+            "province": "SUMATERA BARAT",
+            "description": "Saya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekar Saya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekarSaya memiliki beberapa proyek perumahan yang lagi saya kembangkan dengan indah meria mekar",
+            "website": "tes.com/properti",
+            "area_specialist": null
+        },
+        "project_photos": [
+            {
+                "caption": null,
+                "filename": "storage/data/image/project/project_photos/PJ-PP-gedung_pusat_perbela1-20240203.jpeg",
+                "is_cover": "1"
+            }
+        ],
+        "project_video": {
+            "vendor": "youtube",
+            "link": "https://www.youtube.com/embed/0gNctcuH0FE",
+            "thumbnail": null
+        },
+        "project_virtual_tour": {
+            "name": "aku",
+            "link": "https://www.youtube.com/watch?v=Unvybn8Mjs8"
+        },
+        "project_documents": [
+            {
+                "name": "90-Article Text-213-1-10-20190416.pdf",
+                "type": "pdf",
+                "filename": "storage/data/file/project/project_documents/FD-PJ-90-Ar-20240105.pdf"
+            }
+        ],
+        "project_facilities": [
+            {
+                "name": "Pemanas Air",
+                "category": "perabot",
+                "icon": "storage/data/image/facility_type/U-PP-Pemanas Air-20231214.svg"
+            },
+            {
+                "name": "Sauna",
+                "category": "keunggulan",
+                "icon": "storage/data/image/facility_type/U-PP-Sauna-20231231.svg"
+            },
+            {
+                "name": "Perpustakaan",
+                "category": "fasilitas",
+                "icon": "storage/data/image/facility_type/U-PP-Perpustakaan-20231231.svg"
+            }
+        ],
+        "project_infrastructure": [
+            {
+                "type": "Taman",
+                "name": "kau",
+                "icon": "storage/data/image/infrastructure_type/U-PP-Taman-20231214.svg",
+                "distance": null
+            }
+        ]
+    }
+}

@@ -247,27 +247,14 @@ class KprView extends GetView<KprController> {
                   formatCurrencyDouble(
                       controller.loanSimulationResult.value.summaryTotalLoan!)),
               SizedBox(height: 12),
-              // GridView(
-              //     gridDelegate:
-              //         SliverGridDelegateWithFixedCrossAxisCount(
-              //             crossAxisCount: 2,
-              //             crossAxisSpacing: 10,
-              //             mainAxisSpacing: 10,
-              //             childAspectRatio: 1.3),
-              //     shrinkWrap: true,
-              //     physics: NeverScrollableScrollPhysics(),
-              //     children: controller.loanSimulationResult.value.installmentByYear!
-              //         .map((e) => ItemAngsuran(
-              //             formatCurrencyDouble(e.installment!),
-              //             e.year.toString(),
-              //             isSelected: loanTermController.text ==
-              //                     e.year.toString()
-              //                 ? true
-              //                 : false))
-              //         .toList())
-              Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
+              GridView(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10,
+                      childAspectRatio: 1.3),
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
                   children: controller
                       .loanSimulationResult.value.installmentByYear!
                       .map((e) => ItemAngsuran(
@@ -278,6 +265,19 @@ class KprView extends GetView<KprController> {
                               ? true
                               : false))
                       .toList())
+              // Wrap(
+              //     spacing: 8,
+              //     runSpacing: 8,
+              //     children: controller
+              //         .loanSimulationResult.value.installmentByYear!
+              //         .map((e) => ItemAngsuran(
+              //             formatCurrencyDouble(e.installment!),
+              //             e.year.toString(),
+              //             isSelected: controller.loanTermController.text ==
+              //                     e.year.toString()
+              //                 ? true
+              //                 : false))
+              //         .toList())
             ],
           );
         } else {

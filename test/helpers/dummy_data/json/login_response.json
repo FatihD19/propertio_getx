@@ -1,0 +1,13 @@
+{
+    "status": "success",
+    "message": "berhasil masuk",
+    "data": {
+        "user": {
+            "account_id": "ID_12202308133907",
+            "full_name": "userProperti",
+            "role": "user",
+            "picture_profile_file": "storage/data/image/users/LFT-userproperti-20240604.jpg"
+        },
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOGFmYzdlZjY1YmM2MWViOGVjYjYxOGYyZjE3MDc3M2M0YzgxNzc0NWQ2YjgyYTQ0MDFmY2RlNmU3MDc1MjFmMTdhY2M3MjIxMmRkNWQwMjMiLCJpYXQiOjE3MjAwODI0OTguODUyNjY0LCJuYmYiOjE3MjAwODI0OTguODUyNjY1LCJleHAiOjE3MjAwODk2OTguODUwMzEzLCJzdWIiOiI1Iiwic2NvcGVzIjpbInVzZXIiXX0.XRjul8dd0jIMLaEk3vdarK2fcKYNOwuslEAKt-n4YFMrlMu2KtquP8L-fUfYoY9rmwQlNWJzj8P0EFjxirhfZNlD9Mc0S2lsixqxTWkgtWYV0rE8wT7OQcE98OccMSVDzN18rW-rMDipt535UFyrXTNykVpufetSDx14Kbgkb9zB4bFQaOfNGvqLbS6p0HQXmRn26bQBCDMxKEe61kNw-W_BcYNcy-hUJJaQ3-LlipROHkdh1tLZk80cIZzdncw3hvBWTQlAa66NUcLiZIgi0g0qVY1UO58VMwFh6uRgVXHGge78ZkaMYXet8NTeKVAreX3a1e-GL5KHTKnEOY9fanC4beQ0CvxshQ74bkiHAQVNWGy2EfaG6glQ2-1V2t9uZRQD7LdPvI5l4O4o_2Bd3I38VhwDJ7ouw5KKLVygwe2kVsSu0sqRLznN2m3w__FDNkIqg0mRoIDW09K1mr-ze5jdSmqvZuFUV0wXm8yDL72IG5xc3Lq6cXa6KQ4joselDf2jMdG5mIYCec7UROHGOGJWI-cHbZAik0WG_ZxtuEk_V-Y_nNjSi-kD3HuKPGLNqP7ydy6YrL-sdbJ9bUEEDe1tuvo0_f2cieDRgnpn4oEdb7T6eoKgByL0xo3JwsFUIzSd_ULd5qi6k5HCs1NouVfaP5l9BtXBwIcnfDYVLO0"
+    }
+}

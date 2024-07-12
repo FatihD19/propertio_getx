@@ -1,0 +1,348 @@
+{
+    "status": "success",
+    "message": "berhasil memuat data",
+    "data": {
+        "project_favorites": [
+            {
+                "project_code": "PJ_Rumah-012024031267448",
+                "title": "Rumah Graha Permata Indah",
+                "headline": "Perumahan Graha Permata Indah Prestige Housing",
+                "slug": "perumahan-citra-land",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-22 08:23:19",
+                "address": {
+                    "address": "Jl. Raya Broto",
+                    "district": "LEMBAH GUMANTI",
+                    "city": "KABUPATEN SOLOK",
+                    "province": "SUMATERA BARAT"
+                },
+                "count_unit": 1,
+                "price": "12999999999",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-rumah_graha_permata_6-20240222.jpg",
+                "count_views": 328,
+                "certificate": "SHGB",
+                "stock_unit": 1,
+                "count_leads": 151,
+                "status": "active",
+                "completed_at": "2022",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Rumah Tipe 70",
+                        "unit_code": "U_RUM-012024251736",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-rumah-3-20240220.jpg",
+                        "price": "12999999999",
+                        "bedroom": "1",
+                        "bathroom": "1",
+                        "area": "300",
+                        "stock": "1"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-012024101970011",
+                "title": "Rumah Residence Graha",
+                "headline": "Rumah Residence Graha Rumah Residence",
+                "slug": "testing-proyek-januari-2024",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-01-25 17:36:59",
+                "address": {
+                    "address": "Sleman, Maguwoharjo, Depok, Sleman",
+                    "district": "CILANDAK",
+                    "city": "KOTA JAKARTA SELATAN",
+                    "province": "DKI JAKARTA"
+                },
+                "count_unit": 3,
+                "price": "380000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-kantor_residence1-20240114.jpg",
+                "count_views": 332,
+                "certificate": "SHM",
+                "stock_unit": 57,
+                "count_leads": 90,
+                "status": "active",
+                "completed_at": "2021",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Rumah tipe 60",
+                        "unit_code": "U_TES-012024162295",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-rumah-1-20240118.jpg",
+                        "price": "380000000",
+                        "bedroom": "2",
+                        "bathroom": "2",
+                        "area": "12",
+                        "stock": "3"
+                    },
+                    {
+                        "title": "RUmah tipe 120",
+                        "unit_code": "U_SDA-012024180125",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-r_uma-1-20240118.jpg",
+                        "price": "699000000",
+                        "bedroom": "2",
+                        "bathroom": "3",
+                        "area": "10",
+                        "stock": "4"
+                    },
+                    {
+                        "title": "rumah sederhana",
+                        "unit_code": "U_RUM-012024211688",
+                        "photo": null,
+                        "price": "50000000000",
+                        "bedroom": null,
+                        "bathroom": null,
+                        "area": "20000",
+                        "stock": "50"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-012024251740446",
+                "title": "Samira Regency Bekasi",
+                "headline": "Proyek Perumahan Samira Regency Bekasi by PT. Triyasa Propertindo",
+                "slug": "perumahan-asri-sleman-3",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-21 14:47:04",
+                "address": {
+                    "address": "jl.kabupaten",
+                    "district": "TALUDITI",
+                    "city": "KABUPATEN POHUWATO",
+                    "province": "GORONTALO"
+                },
+                "count_unit": 2,
+                "price": "887000002",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-samira_regency_bekas5-20240201.jpg",
+                "count_views": 180,
+                "certificate": "SHM",
+                "stock_unit": 36,
+                "count_leads": 37,
+                "status": "active",
+                "completed_at": "2023",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Citrine",
+                        "unit_code": "U_CIT-022024011781",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-citri-2-20240201.jpg",
+                        "price": "887000002",
+                        "bedroom": "2",
+                        "bathroom": "1",
+                        "area": "45",
+                        "stock": "16"
+                    },
+                    {
+                        "title": "Unit 2",
+                        "unit_code": "U_UNI-022024201028",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit2-1-20240222.jpg",
+                        "price": "2000000000",
+                        "bedroom": null,
+                        "bathroom": null,
+                        "area": "0",
+                        "stock": "20"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-022024151173167",
+                "title": "Perumahan Rama",
+                "headline": "Perumahan eksklusif dengan harga yang terjangkau",
+                "slug": "perumahan-eksklusif-dengan-harga-yang-terjangkau",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-17 18:25:27",
+                "address": {
+                    "address": "Jln. Parangtritis",
+                    "district": "BANTUL",
+                    "city": "KABUPATEN BANTUL",
+                    "province": "DI YOGYAKARTA"
+                },
+                "count_unit": 3,
+                "price": "20000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-perumahan_rama2-20240215.jpeg",
+                "count_views": 25,
+                "certificate": "SHM",
+                "stock_unit": 42,
+                "count_leads": 7,
+                "status": "active",
+                "completed_at": "2023",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Akapela",
+                        "unit_code": "U_AKA-022024171767",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-akape-1-20240217.jpg",
+                        "price": "50000000",
+                        "bedroom": "2",
+                        "bathroom": "2",
+                        "area": "50",
+                        "stock": "2"
+                    },
+                    {
+                        "title": "Akapela",
+                        "unit_code": "U_AKA-022024171894",
+                        "photo": null,
+                        "price": "35000000",
+                        "bedroom": "2",
+                        "bathroom": "2",
+                        "area": "50",
+                        "stock": "20"
+                    },
+                    {
+                        "title": "Hanui",
+                        "unit_code": "U_HAN-022024172172",
+                        "photo": null,
+                        "price": "20000000",
+                        "bedroom": "0",
+                        "bathroom": "0",
+                        "area": "0",
+                        "stock": "20"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-022024200065058",
+                "title": "Rumah 2 Lantai Dalam Kompleks Elit Cempaka Putih",
+                "headline": "Rumah 2 Lantai Dalam Kompleks Elit Cempaka Putih",
+                "slug": "rumah-2-lantai-dalam-kompleks-elit-cempaka-putih",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-22 12:00:57",
+                "address": {
+                    "address": "Cempaka Putih, Jakarta Pusat",
+                    "district": "CEMPAKA PUTIH",
+                    "city": "KOTA JAKARTA PUSAT",
+                    "province": "DKI JAKARTA"
+                },
+                "count_unit": 1,
+                "price": "1790000000",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-rumah2_lantai_dalam_0-20240220.jpg",
+                "count_views": 44,
+                "certificate": "SHM",
+                "stock_unit": 1,
+                "count_leads": 8,
+                "status": "active",
+                "completed_at": "2020",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Unit 405",
+                        "unit_code": "U_UNI-022024200081",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-unit4-1-20240220.jpeg",
+                        "price": "1790000000",
+                        "bedroom": "2",
+                        "bathroom": "2",
+                        "area": "72",
+                        "stock": "1"
+                    }
+                ]
+            },
+            {
+                "project_code": "PJ_Rumah-022024201288992",
+                "title": "Perumahan Griya Cintia",
+                "headline": "Perumahan Griya Cintia",
+                "slug": "rumah",
+                "property_type": {
+                    "name": "Rumah",
+                    "icon": "storage/data/image/property_type/U-PP-Rumah-20231231.svg"
+                },
+                "posted_at": "2024-02-22 08:04:43",
+                "address": {
+                    "address": "jalan abdul",
+                    "district": "HULU KUANTAN",
+                    "city": "KABUPATEN KUANTAN SINGINGI",
+                    "province": "RIAU"
+                },
+                "count_unit": 1,
+                "price": "322342342",
+                "photo": "storage/data/image/project/project_photos/PJ-PP-rumah_karingan1-20240220.png",
+                "count_views": 19,
+                "certificate": "Girik",
+                "stock_unit": 13,
+                "count_leads": 5,
+                "status": "active",
+                "completed_at": "2020",
+                "is_favorites": true,
+                "developer": {
+                    "full_name": "Danish Widodo",
+                    "picture_profile_file": "storage/data/image/users/LFT-danish-widodo-20240304.jpg"
+                },
+                "units": [
+                    {
+                        "title": "Rumah Tipe 80",
+                        "unit_code": "U_ASD-022024201263",
+                        "photo": "storage/data/image/unit/unit_photos/U-UP-rumah-1-20240222.jpg",
+                        "price": "322342342",
+                        "bedroom": null,
+                        "bathroom": null,
+                        "area": "23",
+                        "stock": "13"
+                    }
+                ]
+            }
+        ],
+        "pagination": {
+            "current_page": 1,
+            "total": 7,
+            "per_page": 6,
+            "last_page": 2,
+            "next_page_url": "https://beta.propertio.id/api/v1/favorite?page=2",
+            "prev_page_url": null,
+            "first_page_url": "https://beta.propertio.id/api/v1/favorite?page=1",
+            "last_page_url": "https://beta.propertio.id/api/v1/favorite?page=2",
+            "links": [
+                {
+                    "url": null,
+                    "label": "&laquo;",
+                    "active": false
+                },
+                {
+                    "url": "https://beta.propertio.id/api/v1/favorite?page=1",
+                    "label": "1",
+                    "active": true
+                },
+                {
+                    "url": "https://beta.propertio.id/api/v1/favorite?page=2",
+                    "label": "2",
+                    "active": false
+                },
+                {
+                    "url": "https://beta.propertio.id/api/v1/favorite?page=2",
+                    "label": "&raquo;",
+                    "active": false
+                }
+            ]
+        }
+    }
+}

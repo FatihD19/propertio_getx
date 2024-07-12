@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:propertio_getx/app/data/datasource/auth_local_datasource.dart';
 import 'package:propertio_getx/app/data/datasource/auth_remote_datasource.dart';
 import 'package:propertio_getx/app/data/model/request/login_request_model.dart';
+import 'package:propertio_getx/app/data/model/responses/login_response_model.dart';
 
 class LoginController extends GetxController {
   final AuthRemoteDataSource _authRemoteDataSource;
@@ -16,6 +17,7 @@ class LoginController extends GetxController {
 
   final emailController = TextEditingController(text: '');
   final passwordController = TextEditingController(text: '');
+  var loginResponse = Rxn<LoginResponseModel>();
 
   void validateLogin() {
     if (emailController.text.isEmpty) {
@@ -27,10 +29,11 @@ class LoginController extends GetxController {
     }
   }
 
-  Future<void> login() async {
+  Future<void> login({LoginRequestModel? loginReq}) async {
     isLoading(true);
-    final result = await _authRemoteDataSource.login(LoginRequestModel(
-        email: emailController.text, password: passwordController.text));
+    final result = await _authRemoteDataSource.login(loginReq ??
+        LoginRequestModel(
+            email: emailController.text, password: passwordController.text));
     isLoading(false);
 
     result.fold(
@@ -41,6 +44,7 @@ class LoginController extends GetxController {
       },
       (right) {
         Get.offAllNamed('/dashboard');
+        loginResponse.value = right;
         isError(false);
       },
     );

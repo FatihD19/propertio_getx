@@ -42,22 +42,22 @@ class ProjectView extends GetView<ProjectController> {
         if (controller.isLoading.value) {
           return Center(child: CircularProgressIndicator());
         } else {
-          return controller.projectData.value.data!.projects!.isEmpty
+          return controller.projectData.value!.data!.projects!.isEmpty
               ? Center(
                   child: Text('Data kosong',
                       style: primaryTextStyle.copyWith(fontSize: 16)))
               : Column(
                   children: [
                     Column(
-                        children: controller.projectData.value.data!.projects!
+                        children: controller.projectData.value!.data!.projects!
                             .map((proyek) {
                       return ProyekCard(proyek);
                     }).toList()),
                     NavigationButton(
                       currentPage: controller
-                          .projectData.value.data!.pagination!.currentPage!,
+                          .projectData.value!.data!.pagination!.currentPage!,
                       lastPage: controller
-                          .projectData.value.data!.pagination!.lastPage!,
+                          .projectData.value!.data!.pagination!.lastPage!,
                       implementLogic: (page) {
                         controller.fetchProjectData(page: page);
                       },
