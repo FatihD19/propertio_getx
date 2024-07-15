@@ -19,13 +19,16 @@ class LoginController extends GetxController {
   final passwordController = TextEditingController(text: '');
   var loginResponse = Rxn<LoginResponseModel>();
 
-  void validateLogin() {
+  Future<void> validateLogin() async {
+    await login();
     if (emailController.text.isEmpty) {
       Get.snackbar('Error', 'Email tidak boleh kosong');
     } else if (passwordController.text.isEmpty) {
       Get.snackbar('Error', 'Password tidak boleh kosong');
+    } else if (isError.value == true) {
+      Get.snackbar('Error', errorMessage.value);
     } else {
-      login();
+      Get.offAllNamed('/dashboard');
     }
   }
 
@@ -37,13 +40,11 @@ class LoginController extends GetxController {
     isLoading(false);
 
     result.fold(
-      (left) {
+      (left) async {
         errorMessage.value = left;
         isError(true);
-        Get.snackbar('Error', left);
       },
       (right) {
-        Get.offAllNamed('/dashboard');
         loginResponse.value = right;
         isError(false);
       },
@@ -55,22 +56,10 @@ class LoginController extends GetxController {
       final LoginRequestModel data =
           await _authLocalDataSource.getCredentialFromLocal();
       print('${data.password} ${data.email}');
-      final result = await _authRemoteDataSource.login(data);
-      result.fold(
-        (left) {
-          errorMessage.value = left;
-          isError(true);
-          Get.snackbar('Error', left);
-          Get.offAllNamed('/login');
-        },
-        (right) {
-          Get.offAllNamed('/dashboard');
-          isError(false);
-        },
-      );
+      await login(loginReq: data);
     } catch (e) {
       // Get.snackbar('Error', e.toString());
-      Get.offAllNamed('/login');
+      isError(true);
     }
   }
 }

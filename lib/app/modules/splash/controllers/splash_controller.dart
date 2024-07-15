@@ -10,7 +10,12 @@ class SplashController extends GetxController {
   @override
   void onInit() async {
     await Future.delayed(Duration(seconds: 1));
-    loginController.AuthGetCurrentUser();
+    await loginController.AuthGetCurrentUser();
+    if (loginController.isError.value == true) {
+      Get.offAllNamed('/login');
+    } else {
+      Get.offAllNamed('/dashboard');
+    }
     super.onInit();
   }
 }

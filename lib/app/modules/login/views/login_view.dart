@@ -108,8 +108,8 @@ class LoginView extends GetView<LoginController> {
             } else {
               return CustomButton(
                   text: 'Masuk Sekarang',
-                  onPressed: () {
-                    controller.validateLogin();
+                  onPressed: () async {
+                    await controller.validateLogin();
                   });
             }
           }),
